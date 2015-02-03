@@ -40,4 +40,23 @@ git checkout -b hotfix
 
 nano index2.html
 git commit -a -m 'fixed'
+git checkout master
+git merge hotfix
+
+git branch -d hotfix
+	Deleted branch hotfix (0a2ae16).
+
+git checkout iss53
+	Switched to branch 'iss53'
+
+git commit -a -m 'finish'
+	[iss53 3eaea88] finish
+	 6 files changed, 46 insertions(+)
+	 create mode 100644 Chapter 2/index.html
+	 create mode 100644 Chapter 2/index2.html
+	 create mode 100644 Chapter 2/test.rb
+	 create mode 100644 Chapter 3/README.md
+	 create mode 100644 Chapter 3/chapter3_answers
+	 create mode 100644 index.html
+
 
