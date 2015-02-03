@@ -1,0 +1,17 @@
+sudo apt-get install git
+
+git config --global user.name "Marielle Banawan"
+
+git config --global user.email mhariyelle@gmail.com
+
+git config --global core.editor emacs
+
+git config --list
+	user.name=Marielle Banawan
+	user.email=mhariyelle@gmail.com
+	core.editor=emacs
+	core.repositoryformatversion=0
+	core.filemode=true
+	core.bare=false
+	core.logallrefupdates=true
+
