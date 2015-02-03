@@ -1,0 +1,43 @@
+3.1
+git branch testing
+git log --oneline --decorate
+	68ec487 (HEAD, tag: v1.4-lw, tag: v1.4, testing, master) first commit
+	f4f67ba (origin/master, origin/HEAD) added test
+	a56207a Initial commit
+
+git checkout testing
+	M	Chapter 2/chapter2_answers
+	D	Chapter 2/newfile
+	A	Chapter 2/test.md
+	D	Chapter 2/testfile.md
+	Switched to branch 'testing'
+
+nano test.rb
+git commit -a -m 'made a change'
+git checkout master
+
+3.2
+git checkout -b iss53
+	M	Chapter 2/chapter2_answers
+	D	Chapter 2/newfile
+	A	Chapter 2/test.md
+	D	Chapter 2/testfile.md
+	Switched to a new branch 'iss53'
+
+nano index.html
+git commit -a -m 'added'
+	[iss53 0a2ae16] added
+	 4 files changed, 382 insertions(+)
+	 delete mode 100644 Chapter 2/newfile
+	 create mode 100644 Chapter 2/test.md
+	 delete mode 100644 Chapter 2/testfile.md
+
+git checkout master
+	Switched to branch 'master'
+
+git checkout -b hotfix
+	Switched to branch 'hotfix'
+
+nano index2.html
+git commit -a -m 'fixed'
+
