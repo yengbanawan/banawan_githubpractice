@@ -59,4 +59,52 @@ git commit -a -m 'finish'
 	 create mode 100644 Chapter 3/chapter3_answers
 	 create mode 100644 index.html
 
+git checkout master
+	Switched to branch 'iss53'
+git merge iss53
+	Updating 68ec487..635c5a3
+	Fast-forward
+	 Chapter 2/chapter2_answers             | 381 +++++++++++++++++++++++++++++++++
+	 Chapter 2/{newfile => index.html}      |   0
+	 Chapter 2/{testfile.md => index2.html} |   0
+	 Chapter 2/test.md                      |   1 +
+	 Chapter 2/test.rb                      |   0
+	 Chapter 3/README.md                    |   0
+	 Chapter 3/chapter3_answers             |  62 ++++++
+	 index.html                             |   3 +
+	 8 files changed, 447 insertions(+)
+	 rename Chapter 2/{newfile => index.html} (100%)
+	 rename Chapter 2/{testfile.md => index2.html} (100%)
+	 create mode 100644 Chapter 2/test.md
+	 create mode 100644 Chapter 2/test.rb
+	 create mode 100644 Chapter 3/README.md
+	 create mode 100644 Chapter 3/chapter3_answers
+	 create mode 100644 index.html
+
+git branch -d iss53
+	Deleted branch iss53 (was 635c5a3).
+
+git merge iss53
+	merge: iss53 - not something we can merge
+
+git status
+	On branch master
+	Your branch is ahead of 'origin/master' by 4 commits.
+	  (use "git push" to publish your local commits)
+
+	Changes not staged for commit:
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git checkout -- <file>..." to discard changes in working directory)
+
+		modified:   Chapter 3/chapter3_answers
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+
+git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+meld opendiff kdiff3 tkdiff xxdiff tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc3 codecompare emerge vimdiff
+No known merge tool is available.
 
